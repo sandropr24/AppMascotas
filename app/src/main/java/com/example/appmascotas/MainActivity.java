@@ -32,8 +32,17 @@ public class MainActivity extends AppCompatActivity {
 
         loadUI();
 
-        btnActivityRegistrar.setOnClickListener((v) -> {startActivity(new Intent(getApplicationContext(), Registrar.class));});
-        btnActivityListar.setOnClickListener((v) -> {startActivity(new Intent(getApplicationContext(), Listar.class));});
-        btnactivityListarCustom.setOnClickListener((v) -> {startActivity(new Intent(getApplicationContext(), ListarCustom.class));});
+        btnActivityRegistrar.setOnClickListener((v) -> {
+            startActivity(new Intent(getApplicationContext(), Registrar.class));
+        });
+        btnActivityListar.setOnClickListener((v) -> {
+            startActivity(new Intent(getApplicationContext(), Listar.class));
+        });
+        btnactivityListarCustom.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ListarCustom.class);
+            startActivity(intent);
+        });
+
     }
+
 }
