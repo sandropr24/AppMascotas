@@ -126,7 +126,7 @@ public class Actualizar extends AppCompatActivity {
 
         requestQueue = Volley.newRequestQueue(this);
 
-        String URL = "http://192.168.101.17:3000/mascotas/" + idMascota;
+        String URL = "http://192.168.56.1:3000/mascotas/" + idMascota;
 
         JSONObject jsonObject = new JSONObject();
 
